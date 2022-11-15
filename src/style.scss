@@ -39,6 +39,16 @@
         color: #5d5b8d;
         font-weight: bold;
         font-size: 24px;
+        transform-style: preserve-3d;
+        animation: animate 7s linear infinite;
+        @keyframes animate {
+          0% {
+            transform: perspective(1000px) rotateY(0deg);
+          }
+          100% {
+            transform: perspective(1000px) rotateY(360deg);
+          }
+        }
       }
 
       .title {
