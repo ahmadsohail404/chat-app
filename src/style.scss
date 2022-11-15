@@ -78,6 +78,9 @@
           font-weight: bold;
           border: none;
           cursor: pointer;
+          &:hover {
+            background-color: #5d5b8d;
+          }
         }
 
         label {
@@ -90,6 +93,11 @@
 
           img {
             width: 32px;
+          }
+          span {
+            &:hover {
+              color: #5d5b8d;
+            }
           }
         }
       }
