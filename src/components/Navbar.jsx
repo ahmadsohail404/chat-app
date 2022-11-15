@@ -2,13 +2,14 @@ import React, { useContext } from 'react'
 import { signOut } from "firebase/auth"
 import { auth } from '../firebase'
 import { AuthContext } from '../context/AuthContext'
+import chatAlong from "../img/chatAlong.svg"
 
 const Navbar = () => {
   const { currentUser } = useContext(AuthContext)
 
   return (
     <div className='navbar'>
-      <span className="logo">Chat App</span>
+      <img className="logo" height={60} src={chatAlong} alt="logo"></img>
       <div className="user">
         <img src={currentUser.photoURL} alt="" />
         <span>{currentUser.displayName}</span>

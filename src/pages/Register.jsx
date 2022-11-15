@@ -5,6 +5,7 @@ import { auth, db, storage } from "../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
+import chatAlong from "../img/chatAlong.svg";
 
 const Register = () => {
   const [err, setErr] = useState(false);
@@ -62,7 +63,7 @@ const Register = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">Chat App</span>
+        <img className="logo" height={100} src={chatAlong} alt="logo"></img>
         <span className="title">Register</span>
         <form onSubmit={handleSubmit}>
           <input required type="text" placeholder="display name" />

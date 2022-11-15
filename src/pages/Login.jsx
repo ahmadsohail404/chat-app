@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
+import chatAlong from "../img/chatAlong.svg";
 
 const Login = () => {
   const [err, setErr] = useState(false);
@@ -22,7 +23,7 @@ const Login = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">Chat App</span>
+        <img className="logo" height={100} src={chatAlong} alt="logo"></img>
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
