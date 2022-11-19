@@ -6,6 +6,7 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
 import chatAlong from "../img/chatAlong.svg";
+import Footer from "../components/Footer";
 
 const Register = () => {
   const [err, setErr] = useState(false);
@@ -86,6 +87,7 @@ const Register = () => {
           You do have an account? <Link to="/login">Login</Link>
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

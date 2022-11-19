@@ -356,4 +356,23 @@
       }
     }
   }
+  .footer {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+  }
+  .footer span {
+    animation: animate 7s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(360deg);
+    }
+  }
 }

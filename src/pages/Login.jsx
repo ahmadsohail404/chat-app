@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import chatAlong from "../img/chatAlong.svg";
+import Footer from "../components/Footer";
 
 const Login = () => {
   const [err, setErr] = useState(false);
@@ -33,6 +34,7 @@ const Login = () => {
         </form>
         <p>You don't have an account? <Link to="/register">Register</Link></p>
       </div>
+      <Footer />
     </div>
   );
 };
